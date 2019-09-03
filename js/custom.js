@@ -341,6 +341,7 @@ jQuery(function($) {
 			$('.category-isotope a').on('click', function() {
 				$('.category-isotope .active').removeClass('active');
 				$(this).addClass('active');
+				$("#miclass").addClass('miclass');
 
 				var selector = $(this).attr('data-filter');
 				$container.isotope({
@@ -353,6 +354,7 @@ jQuery(function($) {
 				});
 				return false;
 			});
+
 
 		}); // end window load function
 	
