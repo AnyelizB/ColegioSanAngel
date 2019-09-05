@@ -3,7 +3,7 @@ Template Name: ABC Tots
 Author: Ingrid Kuhn
 Author URI: themeforest/user/ingridk
 Version: 1.1
-Last change:26th April 2019 
+Last change:26th April 2019
 
 	Table of Contents
 
@@ -12,7 +12,7 @@ Last change:26th April 2019
 	#Navigation
 	#Slider
 	#Home page
-    #Services pages 	
+    #Services pages
 	#About Pages
 	#Team pages
 	#Image galleries
@@ -782,13 +782,15 @@ ul.slider-pagi {
 
 /* Whale in the sea animation */
 
-.floating-whale {
-	left: 50%;
-	z-index: 0;
-	-webkit-animation: float 6s ease-in-out infinite;
-	animation: float 6s ease-in-out infinite;
-	margin-bottom: -45px;
-	margin-left: 120px;
+.globo-angel {
+	right: 10%;
+    z-index: 9999999;
+    -webkit-animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
+    margin-bottom: -45px;
+    margin-left: 120px;
+    top: 0;
+    position: absolute;
 }
 
 .sea {
@@ -3126,7 +3128,7 @@ ul.checkmark li:before {
 		width: 100%;
 		display: inline-block;
 	}
-		
+
 }
 
 
@@ -3152,7 +3154,7 @@ ul.checkmark li:before {
 		bottom: -10px;
 	}
 	 /* Drag Slider */
-    
+
     .slider {
         height: 250px!important;
     }
@@ -3170,7 +3172,7 @@ ul.checkmark li:before {
 	.testimonial .content {
 		padding: 10px;
 	}
-	
+
 	/* jumbotron */
 	.jumbotron h1 {
 		font-size: 1.7em!important;
@@ -3271,7 +3273,7 @@ ul.checkmark li:before {
 /* Medium/small devices (767px) */
 
 @media (max-width: 767px) {
-	
+
 	footer .float-left,
 	.contact-details.float-left{float:none!important}
 	.no-bg-sm {
@@ -3497,7 +3499,7 @@ ul.checkmark li:before {
 		display: none;
 	}
 	 /* Drag Slider */
-    
+
     .slider {
         height: 400px;
     }
@@ -3523,7 +3525,7 @@ ul.checkmark li:before {
     }
     .slider-pagi__elem,.slider-pagi__elem:before {
 		width: 0.5rem;
-		height: 0.5rem;	
+		height: 0.5rem;
     }
 	/* widget */
 	.widget2 {
@@ -3702,8 +3704,6 @@ ul.checkmark li:before {
 		margin-top: 10%!important;
 	}
 }
-
-
 /* Very Large devices ( min 1500px ) */
 
 @media (min-width: 1500px) {
@@ -3716,4 +3716,31 @@ ul.checkmark li:before {
 	.slider-divider {
 		margin-top: -100px;
 	}
+}
+
+/* -----------CSS NIC -----------*/
+
+.campos-form{
+	margin-bottom: 15px;
+}
+
+.campos-form input, .campos-form textarea{
+	padding: 0px;
+}
+
+.campos-form label{
+	font-size: 12px;
+	position: absolute;
+	top: -10px;
+	margin: 0;
+	color: #9e9e9e;
+	font-weight: lighter;
+}
+
+.angel-form{
+	margin-top: 5%;
+}
+
+#about-home{
+	position: relative;
 }
