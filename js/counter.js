@@ -1,6 +1,6 @@
 $(document).ready(function() {
     checkDisplay();
-  
+
   $(window).on('resize scroll', function() {
     checkDisplay();
   });
