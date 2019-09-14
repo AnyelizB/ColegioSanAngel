@@ -56,15 +56,12 @@ jQuery(function($) {
 			var post_data = {
 				'user_name': $('input[name=name]').val(),
 				'user_email': $('input[name=email]').val(),
-				'user_celphone': $('input[name=celphone]').val(),
-				'user_aspirant': $('input[name=name_aspirant]').val(),
-				'user_age': $('input[name=age]').val(),
-				'user_gender': $('input[name=gender]').val(),
+				'subject': $('input[name=subject]').val(),
 				'msg': $('textarea[name=message]').val()
 			};
 
 			//Ajax post data to server
-			$.post('php/sendmail.php', post_data, function(response) {
+			$.post('php/sendmailVilla.php', post_data, function(response) {
 				if (response.type === 'error') { //load json data from server and output message     
 					var output = '<br><div class="alert">' + response.text + '</div>';
 				} else {
