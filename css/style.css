@@ -3750,6 +3750,25 @@ ul.checkmark li:before {
 	margin-top: 5%;
 }
 
+.villa-form{
+	position: absolute;
+  right: 0;
+  top: 130px;
+	z-index: 9;
+}
+
 #about-home{
 	position: relative;
+}
+
+.about-home-contact{
+margin-bottom: 3.5rem
+}
+
+@media (max-width: 892px) {
+
+	.villa-form{
+		position: relative !important;
+	}
+
 }
