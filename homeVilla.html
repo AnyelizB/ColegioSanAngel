@@ -51,7 +51,7 @@
          </div>
          <!--/container -->
       </div>
-      <script language="JavaScript" type="text/JavaScript" src="http://agendavirtual.vpsnotas.com/#/sanangel?file=http://construcanarias.bitacoras.com/rss1.xml&max=10"></script> 
+      <script language="JavaScript" type="text/JavaScript" src="http://agendavirtual.vpsnotas.com/#/sanangel?file=http://construcanarias.bitacoras.com/rss1.xml&max=10"></script>
      <!-- <div>
 
       </div> -->
@@ -65,14 +65,15 @@
                      <div class="col-md-12">
                         <!-- Start Contact Info -->
                         <ul class="contact-details float-left">
-                           <li><i class="fa fa-map-marker"></i>AV. 1 de mayo No. 68 - H 92 </li>
-                           <li><i class="fa fa-envelope"></i><a href="mailto:col.sanangel@gmail.com">col.sanangel@gmail.com</a></li>
-                           <li><i class="fa fa-phone"></i>(571) 457 2066</li>
+                           <li class="head-dire"><i class="fa fa-map-marker"></i>AV. 1 de mayo No. 68 - H 92 </li>
+                           <li class="head-mail"><i class="fa fa-envelope"></i><a href="mailto:col.sanangel@gmail.com">col.sanangel@gmail.com</a></li>
+                           <li class="head-phone"><i class="fa fa-phone"></i>(571) 457 2066</li>
                         </ul>
+
                         <!-- End Contact Info -->
                         <!-- Start Social Links -->
                         <ul class="social-list float-right list-inline">
-                           <li class="list-inline-item"><a title="Contáctanos" href="contacto_villa.html"><i class="fab flaticon-books-stack-of-three"></i></a></li>
+                           <li class="list-inline-item"><a title="Contáctanos" href="contacto_villa.html"><i class="fa fa-info-circle"></i></a></li>
                         </ul>
                         <!-- /End Social Links -->
                      </div>
@@ -88,7 +89,7 @@
                <div class="container ">
                   <!-- logo -->
                   <a class="nav-brand" href="#">
-                  <img src="img/logo-vh.png" style="max-height: 85px" alt="" class="img-fluid">
+                  <img src="img/logo-vh.png" alt="" class="img-fluid">
                   </a>
                   <!-- Navbar toggler -->
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -109,7 +110,7 @@
                               Nosotros
                            </a>
                            <div class="dropdown-menu" aria-labelledby="services-dropdown">
-                              
+
                               <a class="dropdown-item" href="vision_villa.html">Visión</a>
                               <a class="dropdown-item" href="principios_villa.html">Principios</a>
                               <a class="dropdown-item" href="historia_villa.html">Historia</a>
@@ -134,7 +135,7 @@
                            </a>
                            <div class="dropdown-menu" aria-labelledby="others-dropdown">
                               <a class="dropdown-item" href="tareas_villa.html">Tareas</a>
-                           
+
                            </div>
                         </li>
                         <!-- menu item -->
@@ -145,9 +146,9 @@
                            <div class="dropdown-menu" aria-labelledby="others-dropdown">
                               <a class="dropdown-item" target="_blank" href="home.html">Sede Salitre</a>
                               <a class="dropdown-item" href="contacto_villa.html">Contácto</a>
-                         
+
                            </div>
-                       
+
                         </li>
                      </ul>
                      <!--/ul -->
@@ -166,7 +167,73 @@
          <!-- ==== Slider ==== -->
          <div class="container-fluid p-0">
             <!-- Draggable Slider -->
+
+            <div class="angel-form container-fluid">
+              <div class="container">
+              <div class="row">
+               <div class="formu-angel col-md-12 col-lg-5 offset-lg-7">
+               <!--FORMULARIO DE CONTACTO-->
+                  <div class="contact-form3 offset-lg-1 bg-light">
+                     <div class="contact-image bg-light">
+                        <!-- envelope icon-->
+                        <i class="fas fa-envelope"></i>
+                     </div>
+                     <h5 class="text-center mt-3">¡Déjanos tus datos <br>
+                        para mas información!</h5>
+                        <!-- Form Starts -->
+                        <div id="contact_form">
+                           <div class="form-group">
+                              <div class="row">
+                                 <div class="campos-form col-md-12">
+                                    <label>Nombre y Apellido<span class="required">*</span></label>
+                                    <input type="text" name="name" class="form-control input-field" required="">
+                                 </div>
+                                 <div class="campos-form col-md-12">
+                                    <label>Correo electrónico <span class="required">*</span></label>
+                                    <input type="email" name="email" class="form-control input-field" required="">
+                                 </div>
+                                 <div class="campos-form col-md-12">
+                                    <label>Teléfono</label>
+                                    <input type="text" name="celphone" class="form-control input-field">
+                                 </div>
+                                 <div class="campos-form col-md-12">
+                                    <label>Motivo de interes<span class="required">*</span></label>
+                                    <textarea name="message" id="message" class="textarea-field form-control" rows="1"  required=""></textarea>
+                                 </div>
+                                 <div class="campos-form col-md-12">
+                                    <div class="datos-nino row">
+                                       <div class="col-4">
+                                          <label>Aspirante</label>
+                                          <input type="text" name="name_aspirant" class="form-control input-field">
+                                       </div>
+                                       <div class="col-4">
+                                             <label>Edad</label>
+                                             <input type="text" placeholder="" name="age" class="form-control input-field">
+
+                                       </div>
+                                       <div class="col-4">
+                                             <label>Genero</label>
+                                             <input type="text" name="gender" class="form-control input-field">
+                                       </div>
+
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- button -->
+                              <button type="submit" id="submit_btn" value="Submit" class="btn btn-primary btn-block mt-3">Enviar</button>
+                           </div>
+                           <!-- /form-group-->
+                           <!-- Contact results -->
+                           <div id="contact_results"></div>
+                        </div>
+                        <!-- /contact-form-->
+                  </div>
+               </div>
+             </div>
+           </div>
+         </div>
             <div class="slider-container">
+
                <!-- Controls -->
                <div class="slider-control left inactive"></div>
                <div class="slider-control right"></div>
@@ -174,8 +241,13 @@
                <!--Slider -->
                <div class="slider">
                   <!-- Slide 0 -->
+
                   <div class="slide slide-0 active" style="background-image:url('img/slider/vision.jpeg')">
+
+
+
                      <div class="slide__bg"></div>
+
                      <div class="slide__content">
                         <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
                            <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
@@ -218,7 +290,7 @@
          <!-- section -->
          <section id="about-home" class="container-fluid pb-0">
             <div class="container">
-               <!-- section heading -->  
+               <!-- section heading -->
                <div class="section-heading text-center" data-aos="fade-down">
                   <br>
                   <h2>Nuestro Colegio</h2>
@@ -246,29 +318,70 @@
             </div>
             <!-- /container-->
             <div class="container">
-               <section class="container" style="max-width: 2040px" data-100-bottom="background-position: 0% 120%;"
-               data-top-bottom="background-position: 0% 100%;" >
-                  <div class="container">
-                     <!-- section heading  id="services-home" class="container-fluid"-->  
-                     <div class="section-heading text-center">
-                        <br>
-                        <br>
-                        <h2>Actividades Educativas</h2>
-                        <p class="subtitle">Observación del estudiante</p>
-                     </div>
-                     <!-- /section heading -->
-                     <!-- row -->
-                     <div class="row vertical-tabs">
-                        <div class="col-lg-12">
-                           <!-- navigation -->
-                           <div class="tabs-with-icon">
-                              <nav>
-                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <a class="nav-item nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1"><i class="flaticon-calendar-with-a-clock-time-tools"></i>Agenda Virtual</a>
-                                    <a class="nav-item nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" ><i class="flaticon-puzzle"></i>Formulario</a>
-                                    <a class="nav-item nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" ><i class="flaticon-blackboard"></i> Tareas</a>
-                                    <a class="nav-item nav-link" id="tab4-tab" data-toggle="tab" href="#tab4"><i class="flaticon-learning"></i>Multimedia</a>
-                                    <a class="nav-item nav-link" id="tab5-tab" data-toggle="tab" href="#tab5" ><i class="flaticon-jigsaw"></i>VPS Software</a>
+               <section class="container" style="max-width: 2040px" data-100-bottom="background-position: 0% 120%;" data-top-bottom="background-position: 0% 100%;">
+            <div class="container">
+               <!-- section heading  id="services-home" class="container-fluid"-->
+               <div class="section-heading text-center">
+                  <br>
+                  <br>
+                  <h2>Actividades Educativas</h2>
+                  <p class="subtitle">Observación del estudiante</p>
+               </div>
+               <!-- /section heading -->
+               <!-- row -->
+               <div class="row vertical-tabs">
+                  <div class="col-lg-12">
+                     <!-- navigation -->
+                     <div class="tabs-with-icon">
+                        <nav>
+                           <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                              <a class="nav-item nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1"><i class="flaticon-notebook"></i>Agenda Virtual</a>
+                              <a class="nav-item nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" ><i class="flaticon-kids-1"></i>Formulario</a>
+                              <a class="nav-item nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" ><i class="flaticon-smiling-baby"></i> Tareas</a>
+                              <a class="nav-item nav-link" id="tab4-tab" data-toggle="tab" href="#tab4"><i class="flaticon-blackboard"></i>Estudiantes</a>
+                              <a class="nav-item nav-link" id="tab5-tab" data-toggle="tab" href="#tab5" ><i class="flaticon-kids"></i>VPS Software</a>
+                           </div>
+                        </nav>
+                        <!-- tab-content -->
+                        <div class="tab-content block-padding bg-light" id="nav-tabContent">
+                           <div class="tab-pane active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                              <!-- row -->
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <!-- image -->
+                                    <img src="img/home/av.jpg" alt="" class="rounded img-fluid">
+                                    <!-- ornament starts-->
+                                    <div class="ornament-rainbow" data-aos="fade-right"></div>
+                                 </div>
+                                 <!-- col-lg -->
+                                 <div class="col-lg-6">
+                                    <h3>Agenda Virtual</h3>
+                                    <p> Plataforma virtual para el control academico del estudiante, la cual puede ingresar el estudiante, los padres o acudiente. ingresan cada uno con su respectivo email ya registrado en nuestro sistema.</p>
+                                    <ul class="custom pl-0">
+                                       <li>Lleva el control académico del estudiante.</li>
+                                       <li>Visualiza el rendimiento de tus hijos</li>
+                                       <li>Conoce el progreso academico del estudiante su desempeño, destreza y habilidad.</li>
+                                    </ul>
+                                    <!-- Button -->
+                                    <a href="#" class="btn btn-secondary mt-4">¡Ingresa aquí!</a>
+                                 </div>
+                                 <!-- /col-lg -->
+                              </div>
+                              <!-- row -->
+                           </div>
+                           <!-- ./Tab-pane -->
+                           <div class="tab-pane" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <h3>Formulario</h3>
+                                    <p>Matricula al estudiante en nuestra plataforma .</p>
+                                    <ul class="custom pl-0">
+                                       <li>Lorem ipsu 1</li>
+                                       <li>Lorem ipsu 2</li>
+                                       <li>Lorem ipsu 3</li>
+                                    </ul>
+                                    <!-- Button -->
+                                    <a href="#" class="btn btn-secondary mt-4">¡Ir al formulario!</a>
                                  </div>
                               </nav>
                               <!-- tab-content -->
@@ -291,7 +404,7 @@
                                              <li>Visualiza el rendimiento de tus hijos</li>
                                              <li>Conoce el progreso academico del estudiante su desempeño, destreza y habilidad.</li>
                                           </ul>
-                                          <!-- Button -->	 
+                                          <!-- Button -->
                                           <a href="https://agendavirtual.vpsnotas.com/#/Login" class="btn btn-secondary mt-4">¡Ingresa aquí!</a>
                                        </div>
                                        <!-- /col-lg -->
@@ -309,7 +422,7 @@
                                              <li>Lorem ipsu 2</li>
                                              <li>Lorem ipsu 3</li>
                                           </ul>
-                                          <!-- Button -->	 
+                                          <!-- Button -->
                                           <a href="https://estudiantes.vpsnotas.com/#/Colegio" class="btn btn-secondary mt-4">¡Ir al formulario!</a>
                                        </div>
                                        <!-- /col-lg -->
@@ -323,55 +436,35 @@
                                     </div>
                                     <!-- row -->
                                  </div>
-                                 <!-- ./Tab-pane -->
-                                 <div class="tab-pane" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
-                                    <div class="row">
-                                       <div class="col-lg-6">
-                                          <!-- image -->
-                                          <img src="img/home/tareas.jpg" alt="" class="rounded img-fluid">
-                                          <!-- ornament starts-->
-                                          <div class="ornament-bubbles" data-aos="fade-right"></div>
-                                       </div>
-                                       <!-- col-lg -->
-                                       <div class="col-lg-6">
-                                          <h3>Tareas</h3>
-                                          <p>Encuentra las actividades ó tareas del estudiante en línea.</p>
-                                          <ul class="custom pl-0">
-                                             <li>Consulta las tareas de tus hijos.</li>
-                                             <li>Controla las actividades realizadas por nivel ó grado.</li>
-                                             <li>Verifica por semanas todas las actividades para el hogar.</li>
-                                          </ul>
-                                          <!-- Button -->	 
-                                          <a href="tareas_villa.html" class="btn btn-secondary mt-4">¡Ir a las actividades!</a>
-                                       </div>
-                                       <!-- /col-lg -->
-                                    </div>
-                                    <!-- row -->
+                                 <!-- col-lg -->
+                                 <div class="col-lg-6">
+                                    <h3>Tareas</h3>
+                                    <p>Encuentra las actividades ó tareas del estudiante en línea.</p>
+                                    <ul class="custom pl-0">
+                                       <li>Consulta las tareas de tus hijos.</li>
+                                       <li>Controla las actividades realizadas por nivel ó grado.</li>
+                                       <li>Verifica por semanas todas las actividades para el hogar.</li>
+                                    </ul>
+                                    <!-- Button -->
+                                    <a href="#" class="btn btn-secondary mt-4">¡Ir a las actividades!</a>
                                  </div>
-                                 <!-- ./Tab-pane -->
-                                 <div class="tab-pane" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
-                                    <div class="row">
-                                       <div class="col-lg-6">
-                                          <h3>Multimedia</h3>
-                                          <p>Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
-                                          <ul class="custom pl-0">
-                                             <li>Lorem ipsu.</li>
-                                             <li>Lorem ipsu.</li>
-                                             <li>Lorem ipsu.</li>
-                                          </ul>
-                                          <!-- Button -->	 
-                                          <a href="#" class="btn btn-secondary mt-4">¡Ir a Galería!</a>
-                                       </div>
-                                       <!-- /col-lg -->
-                                       <div class="col-lg-6 res-margin">
-                                          <!-- image -->
-                                          <img src="img/home/estudiante.png" alt="" class="rounded img-fluid">
-                                          <!-- ornament starts-->
-                                          <div class="ornament-stars" data-aos="fade-right"></div>
-                                       </div>
-                                       <!-- col-lg -->
-                                    </div>
-                                    <!-- row -->
+                                 <!-- /col-lg -->
+                              </div>
+                              <!-- row -->
+                           </div>
+                           <!-- ./Tab-pane -->
+                           <div class="tab-pane" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <h3>Estudiantes</h3>
+                                    <p>Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
+                                    <ul class="custom pl-0">
+                                       <li>Lorem ipsu.</li>
+                                       <li>Lorem ipsu.</li>
+                                       <li>Lorem ipsu.</li>
+                                    </ul>
+                                    <!-- Button -->
+                                    <a href="#" class="btn btn-secondary mt-4">Ver más</a>
                                  </div>
                                  <!-- ./Tab-pane -->
                                  <div class="tab-pane" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
@@ -391,7 +484,7 @@
                                              <li>Lorem ipsu.</li>
                                              <li>Lorem ipsu.</li>
                                           </ul>
-                                          <!-- Button -->	 
+                                          <!-- Button -->
                                           <a target="_blank" href="https://evalweb.vpsnotas.com/#/" class="btn btn-secondary mt-4">¡Ir al software!</a>
                                        </div>
                                        <!-- /col-lg -->
@@ -402,22 +495,51 @@
                               </div>
                               <!-- ./Tab-content -->
                            </div>
-                           <!-- vertical-tabs -->
+                           <!-- ./Tab-pane -->
+                           <div class="tab-pane" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                       container    <!-- image -->
+                                    <img src="img/home/VPSVirtual.png" alt="" class="rounded img-fluid">
+                                    <!-- ornament starts-->
+                                    <div class="ornament-rainbow" data-aos="fade-right"></div>
+                                 </div>
+                                 <!-- col-lg -->
+                                 <div class="col-lg-6">
+                                    <h3>VPS Software</h3>
+                                    <p>Plataforma virtual de control academico para Docentes.</p>
+                                    <ul class="custom pl-0">
+                                       <li>Lorem ipsu. </li>
+                                       <li>Lorem ipsu.</li>
+                                       <li>Lorem ipsu.</li>
+                                    </ul>
+                                    <!-- Button -->
+                                    <a href="#" class="btn btn-secondary mt-4">¡Ir al software!</a>
+                                 </div>
+                                 <!-- /col-lg -->
+                              </div>
+                              <!-- row -->
+                           </div>
+                           <!-- ./Tab-pane -->
                         </div>
                         <!-- /col-lg-6 -->
                      </div>
-                     <!-- /row --> 
+                     <!-- /row -->
                   </div>
-                  <!-- /container -->
-               </section>
+                  <!-- /col-lg-6 -->
+               </div>
+               <!-- /row -->
             </div>
-            <!-- /container --> 
+            <!-- /container -->
+         </section>
+            </div>
+            <!-- /container -->
             <!-- whale in water scene -->
             <!-- whale -->
             <!--
             --><!-- waves -->
             <img src="img/ornaments/barco4.png" class="floating-whale" alt="">
-            
+
             <!-- waves -->
             <div class="waveHorizontals">
                <div id="waveHorizontal1" class="waveHorizontal"></div>
@@ -477,8 +599,8 @@
                            Lorem ipsum dolor sit amet, consectetur adipiscing elit integer dictum malesuada Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus Etiam rhoncus.
                         </p>
                         <!-- Button -->
-                        
-                        <a type="application/rss+xml" target="_blank" href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=4788" class="btn btn-quaternary btn-sm mt-2 ml-1">Más información</a>
+
+                        <a type="application/rss+xml" href="archivos.php" class="btn btn-quaternary btn-sm mt-2 ml-1">Más información</a>
                      </div>
                   </div>
                   <!-- service 3  -->
@@ -536,7 +658,7 @@
                            </a>
                            <p>
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit integer tis maximus Etiam rhoncus tis maximus Etiam rhoncus.
-                           </p> 
+                           </p>
                            <!-- Button -->
                            <a target="_blank" href="https://sie.educar.com.co/cas/login?service=http%3A%2F%2Fsie.educar.com.co%2F" class="btn btn-quaternary btn-sm mt-2 ml-1">¡Ir a SIE!</a>
                         </div>
@@ -602,12 +724,12 @@
 
          <!-- Section -->
          <section id="contact-home" class="container">
-            <!-- section heading -->  
+            <!-- section heading -->
             <div class="section-heading text-center" data-aos="fade-down">
                <h2>Contáctanos</h2>
-               
+
             </div>
-            <!-- /section-heading -->  
+            <!-- /section-heading -->
             <div class="container">
                <div class="row">
                   <div class="col-lg-7">
@@ -624,7 +746,7 @@
                      <!-- /map-->
                   </div>
                   <!-- /col-lg- -->
-                  <!-- contact box -->  
+                  <!-- contact box -->
                   <div class="col-lg-4 contact-form3 offset-lg-1 bg-light h-100">
                      <div class="contact-image bg-light">
                         <!-- envelope icon-->
@@ -637,15 +759,15 @@
                            <div class="row">
                               <div class="col-md-12">
                                  <label>Nombre<span class="required">*</span></label>
-                                 <input type="text" name="name" class="form-control input-field" required=""> 
+                                 <input type="text" name="name" class="form-control input-field" required="">
                               </div>
                               <div class="col-md-12">
                                  <label>Correo Electrónico <span class="required">*</span></label>
-                                 <input type="email" name="email" class="form-control input-field" required=""> 
+                                 <input type="email" name="email" class="form-control input-field" required="">
                               </div>
                               <div class="col-md-12">
                                  <label>Asunto</label>
-                                 <input type="text" name="subject" class="form-control input-field"> 
+                                 <input type="text" name="subject" class="form-control input-field">
                               </div>
                               <div class="col-md-12">
                                  <label>Mensaje<span class="required">*</span></label>
@@ -680,7 +802,7 @@
                <!-- row -->
                <div class="row">
                   <div class="col-lg-4 text-center">
-                     <img src="img/logo-vh.png"  class="logo-footer img-fluid" alt=""/>
+                     <img src="img/logo-vh-w.png"  class="logo-footer img-fluid" alt=""/>
                    <!--  <h5 class="mt-3">Colegio San Ángel</h5> -->
                   </div>
                   <!--/ col-lg -->
@@ -724,7 +846,7 @@
          </footer>
       <!--/ footer-->
       <!-- Bootstrap core & Jquery -->
-      
+
       <script src="vendor/jquery/jquery.min.js"></script>
       <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
       <!-- Custom Js -->
