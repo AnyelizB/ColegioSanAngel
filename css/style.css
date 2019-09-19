@@ -3479,9 +3479,11 @@ ul.checkmark li:before {
 		margin-right: 0px;
 		text-align: center;
 	}
+	/*
 	#divider {
 		display: none;
 	}
+	*/
 	.contact-form3 {
 		margin-top: 55px;
 	}
@@ -3833,6 +3835,14 @@ margin-bottom: 3.5rem
 		position: absolute;
 }
 
+.mobile-form{
+	display: none;
+}
+
+.head-inf{
+	align-items: center;
+}
+
 @media (max-width: 991px) {
 
 	.our-school{
@@ -3843,9 +3853,17 @@ margin-bottom: 3.5rem
 		margin-top: 0;
 	}
 
+	.angel-form{
+		display: none
+	}
+
+	.mobile-form{
+		display: block;
+	}
+
 }
 
-@@media (max-width: 768px) {
+@media (max-width: 768px) {
 	.globo-angel{
 		top: auto;
 		bottom: 140px;
@@ -3853,6 +3871,40 @@ margin-bottom: 3.5rem
 
 	.slide__text{
 		display: none;
+	}
+
+	.mobile-form .formu-angel .contact-form3{
+		margin: 0 !important;
+	}
+
+	.mobile-form, .best-st{
+		padding-bottom: 0px;
+	}
+
+	.about-home, .contact-home, .best-st{
+		padding-top: 0px;
+	}
+
+	.best-st{
+		padding:
+	}
+
+	.head-inf{
+		display: flex;
+	}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.hw-sal{
+		 	flex-flow: row;
+	}
+
+	.hw-sal a{
+		display: flex;
+    flex-flow: wrap;
+		justify-content: center;
 	}
 
 }

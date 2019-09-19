@@ -59,7 +59,7 @@
             <div class="container-fluid top-bar" >
                <div class="container">
                   <div class="row">
-                     <div class="col-md-12">
+                     <div class="col-md-12 head-inf">
                         <!-- Start Contact Info -->
                         <ul class="contact-details float-left">
                            <li class="head-dire"><i class="fa fa-map-marker"></i>Calle 22B N. 44A- 90</li>
@@ -69,7 +69,7 @@
                         <!-- End Contact Info -->
                         <!-- Start Social Links -->
                         <ul class="social-list float-right list-inline">
-                           <li class="list-inline-item"><a title="Contáctanos" href="contacto_villa.html"><i class="fa fa-info-circle"></i></a></li>
+                           <li class="list-inline-item"><a title="Contáctanos" href="contacto.html"><i class="fa fa-info-circle"></i></a></li>
                         </ul>
                         <!-- /End Social Links -->
                      </div>
@@ -97,7 +97,7 @@
                      <ul class="navbar-nav ml-auto">
                         <!-- menu item -->
                         <li class="nav-item active">
-                           <a class="nav-link" href="homeVilla.html">Inicio
+                           <a class="nav-link" href="home.html">Inicio
                            </a>
                         </li>
                         <!-- menu item -->
@@ -107,20 +107,20 @@
                            </a>
                            <div class="dropdown-menu" aria-labelledby="services-dropdown">
 
-                              <a class="dropdown-item" href="vision_villa.html">Visión</a>
-                              <a class="dropdown-item" href="principios_villa.html">Principios</a>
-                              <a class="dropdown-item" href="historia_villa.html">Historia</a>
+                              <a class="dropdown-item" href="vision.html">Visión</a>
+                              <a class="dropdown-item" href="principios.html">Principios</a>
+                              <a class="dropdown-item" href="historia.html">Historia</a>
                            </div>
                         </li>
                         <!-- menu item -->
                         <li class="nav-item dropdown">
-                           <a class="nav-link" href="estudiantes_villa.html">
+                           <a class="nav-link" href="estudiantes.html">
                               Estudiantes
                            </a>
                         </li>
                         <!-- menu item -->
                         <li class="nav-item dropdown">
-                           <a class="nav-link" href="docentes_villa.html">
+                           <a class="nav-link" href="docentes.html">
                               Docentes
                            </a>
                         </li>
@@ -130,7 +130,7 @@
                               Actividades
                            </a>
                            <div class="dropdown-menu" aria-labelledby="others-dropdown">
-                              <a class="dropdown-item" href="tareas_villa.html">Tareas</a>
+                              <a class="dropdown-item" href="tareas.html">Tareas</a>
 
                            </div>
                         </li>
@@ -141,7 +141,7 @@
                            </a>
                            <div class="dropdown-menu" aria-labelledby="others-dropdown">
                               <a class="dropdown-item" target="_blank" href="home.html">Sede Salitre</a>
-                              <a class="dropdown-item" href="contacto_villa.html">Contácto</a>
+                              <a class="dropdown-item" href="contacto.html">Contácto</a>
 
                            </div>
 
@@ -250,8 +250,74 @@
          </div>
          <!-- /container-fluid -->
 
+         <section class="mobile-form container">
+           <div class="container">
+           <div class="row">
+            <div class="formu-angel col-md-12 col-lg-5 offset-lg-7">
+            <!--FORMULARIO DE CONTACTO-->
+               <div class="contact-form3 offset-lg-1">
+                  <div class="contact-image">
+                     <!-- envelope icon-->
+                     <i class="fas fa-envelope"></i>
+                  </div>
+                  <h5 class="text-center mt-3">¡Déjanos tus datos <br>
+                     para mas información!</h5>
+                     <!-- Form Starts -->
+                     <div id="contact_form">
+                        <div class="form-group">
+                           <div class="row">
+                              <div class="campos-form col-md-12">
+                                 <label>Nombre y Apellido<span class="required">*</span></label>
+                                 <input type="text" name="name" class="form-control input-field" required="">
+                              </div>
+                              <div class="campos-form col-md-12">
+                                 <label>Correo electrónico <span class="required">*</span></label>
+                                 <input type="email" name="email" class="form-control input-field" required="">
+                              </div>
+                              <div class="campos-form col-md-12">
+                                 <label>Teléfono</label>
+                                 <input type="text" name="celphone" class="form-control input-field">
+                              </div>
+                              <div class="campos-form col-md-12">
+                                 <label>Motivo de interes<span class="required">*</span></label>
+                                 <textarea name="message" id="message" class="textarea-field form-control" rows="1"  required=""></textarea>
+                              </div>
+                              <div class="campos-form col-md-12">
+                                 <div class="datos-nino row">
+                                    <div class="col-4">
+                                       <label>Aspirante</label>
+                                       <input type="text" name="name_aspirant" class="form-control input-field">
+                                    </div>
+                                    <div class="col-4">
+                                          <label>Edad</label>
+                                          <input type="text" placeholder="" name="age" class="form-control input-field">
+
+                                    </div>
+                                    <div class="col-4">
+                                          <label>Genero</label>
+                                          <input type="text" name="gender" class="form-control input-field">
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- button -->
+                           <button type="submit" id="submit_btn" value="Submit" class="btn btn-primary btn-block mt-3">Enviar</button>
+                        </div>
+                        <!-- /form-group-->
+                        <!-- Contact results -->
+                        <div id="contact_results"></div>
+                     </div>
+                     <!-- /contact-form-->
+               </div>
+            </div>
+          </div>
+         </div>
+         </section>
+
+
          <!-- section -->
-         <section id="about-home" class="container-fluid pb-0">
+         <section id="about-home" class="about-home container-fluid pb-0">
             <div class="container">
                <!-- section heading -->
                <div class="section-heading text-center our-school">
@@ -379,14 +445,14 @@
                         </div>
                         <!-- service content -->
                         <div class="service-content">
-                           <a href="homeVilla.html">
-                              <h4 class="service-head">Colegio San Ángel Villa Claudia</h4>
+                           <a href="home.html">
+                              <h4 class="service-head">Colegio San Ángel Salitre</h4>
                            </a>
                            <p>
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit integer tis maximus Etiam rhoncus.
                            </p>
                            <!-- Button -->
-                           <a target="_blank" href="homeVilla.html" class="btn btn-quaternary btn-sm mt-2 ml-1">¡Ir a la sede!</a>
+                           <a target="_blank" href="home.html" class="btn btn-quaternary btn-sm mt-2 ml-1">¡Ir a la sede!</a>
                         </div>
                      </div>
 
@@ -415,7 +481,7 @@
                      <!-- navigation -->
                      <div class="tabs-with-icon">
                         <nav>
-                           <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                           <div class="nav nav-tabs hw-sal" id="nav-tab" role="tablist">
                               <a class="nav-item nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1"><i class="flaticon-calendar-with-a-clock-time-tools"></i>Agenda Virtual</a>
                               <a class="nav-item nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" ><i class="flaticon-puzzle"></i>Formulario</a>
                               <a class="nav-item nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" ><i class="flaticon-blackboard"></i> Tareas</a>
@@ -596,7 +662,7 @@
          <!-- /section ends-->
 
          <!-- section -->
-         <section id="blogprev-home" data-100-bottom="background-position: 0% 120%;"
+         <section id="blogprev-home" class="best-st" data-100-bottom="background-position: 0% 120%;"
             data-top-bottom="background-position: 0% 100%;">
             <div class="container">
                <div class="container block-padding">
@@ -684,7 +750,7 @@
             </div>
             <!-- /container -->
          </section>
-         <section id="contact-home" class="container">
+         <section id="contact-home" class="contact-home container">
             <!-- section heading -->
             <div class="section-heading text-center" data-aos="fade-down">
                <br>
