@@ -3767,7 +3767,6 @@ ul.checkmark li:before {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(0, 0, 0, 0.5);
 	transition-timing-function: ease-out;
   transition: 0.25s;
 }
@@ -3809,10 +3808,6 @@ ul.checkmark li:before {
   bottom: 0;
 }
 
-.pre-salitre a:hover, .pre-villa a:hover{
-	background: rgba(0, 0, 0, 0);
-}
-
 .villa-form{
 	position: absolute;
   right: 0;
@@ -3843,6 +3838,166 @@ margin-bottom: 3.5rem
 	align-items: center;
 }
 
+.shield{
+	position: absolute;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.salitre-in{
+
+	background: rgba(0, 53, 120, 0.3);
+}
+.villa-in{
+	background-color: rgba(187, 19, 25, 0.3);
+}
+
+.salitre-in, .villa-in{
+	color: white;
+}
+
+.salitre-in:hover, .villa-in:hover{
+	text-decoration: underline;
+	color: white;
+}
+
+.salitre-in span:hover, .villa-in span:hover{
+	text-decoration: underline;
+}
+
+.salitre-in span{
+	width: 90%;
+  position: absolute;
+  padding-left: 40px;
+  bottom: 30%;
+	font-size: 60px;
+	font-weight: 700;
+	font-family: 'Nunito', sans-serif;
+	line-height: 60px;
+}
+
+.villa-in span{
+	width: 100%;
+  position: absolute;
+	text-align: right;
+	padding-right: 40px;
+  bottom: 30%;
+	font-size: 60px;
+	font-weight: 700;
+	font-family: 'Nunito', sans-serif;
+	line-height: 60px;
+}
+
+.center-shield{
+	width: 250px;
+	height: 250px;
+	z-index: 1;
+	position: absolute;
+}
+
+.contact-salitre, .contact-villa{
+display: flex;
+position: absolute;
+bottom: 12%;
+padding: 0 3rem;
+width: 100%;
+}
+
+.contact-villa{
+	right: 3rem;
+	padding: 0;
+	justify-content: flex-end;
+}
+
+.contact-salitre a, .contact-villa a{
+	position: inherit;
+}
+
+.contact-salitre i, .contact-villa i{
+	padding-right: 1rem;
+}
+.contact-salitre ul{
+	padding: 0;
+	/*background: #E8373D;*/
+	background: #035392;
+	padding: 1rem;
+	border-radius: 30px;
+	display: flex;
+  font-size: 15px;
+}
+
+.contact-villa ul{
+	padding: 0;
+	background: #E8373D;
+	padding: 1rem;
+	border-radius: 30px;
+	display: flex;
+  font-size: 15px;
+}
+
+.contact-salitre ul li, .contact-villa ul li{
+	list-style: none;
+	padding: 0.5rem;
+	color: white;
+}
+
+.contact-salitre ul li a, .contact-villa ul li a{
+	color: white;
+}
+
+.contact-salitre ul li i{
+	color: #e4a40f;
+}
+
+.contact-villa ul li i{
+	color: #e4a40f;
+}
+
+.cta{
+	padding: 1rem;
+	background: white;
+	color: #035392;
+	position: absolute;
+	bottom: 5%;
+	margin-left: 3rem;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	width: 300px;
+}
+
+.cta:hover{
+	background: #035392;
+	color: white;
+}
+
+.cta-v{
+	padding: 1rem;
+	background: white;
+	color: #E8373D;
+	position: absolute;
+	bottom: 5%;
+	right: 3rem;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	width: 300px;
+}
+
+.cta-v:hover{
+	background: #E8373D;
+	color: white;
+}
+@media (max-width: 1222px) {
+
+.contact-villa ul, .contact-salitre ul{
+	font-size: 12px;
+}
+
+}
+
 @media (max-width: 991px) {
 
 	.our-school{
@@ -3859,6 +4014,20 @@ margin-bottom: 3.5rem
 
 	.mobile-form{
 		display: block;
+	}
+
+	.salitre-in span, .villa-in span{
+		font-size: 40px;
+	}
+
+	.contact-villa ul, .contact-salitre ul{
+		font-size: 12px;
+		display: block;
+	}
+
+	.villa-in span, .salitre-in span{
+		bottom: initial;
+		top: 5%;
 	}
 
 }
@@ -3893,6 +4062,14 @@ margin-bottom: 3.5rem
 		display: flex;
 	}
 
+	.pre-salitre, .pre-villa{
+		height: 50vh;
+	}
+
+	.pre-salitre img, .pre-villa img{
+		width: 100%;
+	}
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -3924,6 +4101,10 @@ margin-bottom: 3.5rem
 }
 
 .head-mail{
+	display: none;
+}
+
+.contact-salitre, .contact-villa{
 	display: none;
 }
 
