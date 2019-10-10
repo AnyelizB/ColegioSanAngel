@@ -169,68 +169,89 @@
             <!-- Draggable Slider -->
 
             <div class="angel-form container-fluid">
-              <div class="container">
-              <div class="row">
-               <div class="formu-angel col-md-12 col-lg-5 offset-lg-7">
-               <!--FORMULARIO DE CONTACTO-->
-                  <div class="contact-form3 offset-lg-1 bg-light">
-                     <div class="contact-image bg-light">
-                        <!-- envelope icon-->
-                        <i class="fas fa-envelope"></i>
-                     </div>
-                     <h5 class="text-center mt-3">¡Déjanos tus datos <br>
-                        para mas información!</h5>
-                        <!-- Form Starts -->
-                        <div id="contact_form">
-                           <div class="form-group">
-                              <div class="row">
-                                 <div class="campos-form col-md-12">
-                                    <label>Nombre y Apellido<span class="required">*</span></label>
-                                    <input type="text" name="name" class="form-control input-field" required="">
-                                 </div>
-                                 <div class="campos-form col-md-12">
-                                    <label>Correo electrónico <span class="required">*</span></label>
-                                    <input type="email" name="email" class="form-control input-field" required="">
-                                 </div>
-                                 <div class="campos-form col-md-12">
-                                    <label>Teléfono</label>
-                                    <input type="text" name="celphone" class="form-control input-field">
-                                 </div>
-                                 <div class="campos-form col-md-12">
-                                    <label>Motivo de interes<span class="required">*</span></label>
-                                    <textarea name="message" id="message" class="textarea-field form-control" rows="1"  required=""></textarea>
-                                 </div>
-                                 <div class="campos-form col-md-12">
-                                    <div class="datos-nino row">
-                                       <div class="col-4">
-                                          <label>Aspirante</label>
-                                          <input type="text" name="name_aspirant" class="form-control input-field">
-                                       </div>
-                                       <div class="col-4">
-                                             <label>Edad</label>
-                                             <input type="text" placeholder="" name="age" class="form-control input-field">
+                <div class="container">
+                    <div class="row">
+                        <div class="formu-angel col-md-12 col-lg-5 offset-lg-7">
+                            <!--FORMULARIO DE CONTACTO-->
+                            <div class="contact-form3 offset-lg-1 bg-light">
+                                <div class="contact-image bg-light">
+                                    <!-- envelope icon-->
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h5 class="text-center mt-3">¡Déjanos tus datos <br> para mas información!</h5>
+                                <!-- Form Starts -->
+                                <div id="contact_form">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="campos-form col-md-12">
+                                                <label>Nombre y Apellido<span class="required">*</span></label>
+                                                <input type="text" name="name" class="form-control input-field" required="">
+                                            </div>
+                                            <div class="campos-form col-md-12">
+                                                <label>Correo electrónico <span class="required">*</span></label>
+                                                <input type="email" name="email" class="form-control input-field" required="">
+                                            </div>
+                                            <div class="campos-form col-md-12">
+                                                <label>Teléfono</label>
+                                                <input type="text" name="celphone" class="form-control input-field">
+                                            </div>
+                                            <div class="campos-form col-md-12">
+                                                <label>Motivo de interes<span class="required">*</span></label>
+                                                <textarea name="message" id="message" class="textarea-field form-control" rows="1" required=""></textarea>
+                                            </div>
+                                            <div class="campos-form col-md-12">
+                                                <div class="datos-nino row">
+                                                    <div class="col-6">
+                                                        <label>Aspirante</label>
+                                                        <input type="text" name="name_aspirant" class="form-control input-field">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label>Edad</label>
+                                                        <input type="text" placeholder="" name="age" class="form-control input-field">
 
-                                       </div>
-                                       <div class="col-4">
-                                             <label>Genero</label>
-                                             <input type="text" name="gender" class="form-control input-field">
-                                       </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="campos-form col-md-12">
+                                              <div class="datos-nino row">
+                                                <div class="col-6">
+                                                    <label>Genero</label>
+                                                    <input type="text" name="gender" class="form-control input-field">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label>Grado</label>
+                                                    <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                                      <option value="1" selected>Primero</option>
+                                                      <option value="2">Segundo</option>
+                                                      <option value="3">Tercero</option>
+                                                      <option value="4">Cuarto</option>
+                                                      <option value="5">Quinto</option>
+                                                      <option value="6">Sexto</option>
+                                                      <option value="7">Septimo</option>
+                                                      <option value="8">Octavo</option>
+                                                      <option value="9">Noveno</option>
+                                                      <option value="10">Decimo</option>
+                                                      <option value="11">Once</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                          </div>
 
+                                        </div>
+                                        <!-- button -->
+                                        <button type="submit" id="submit_btn" value="Submit" class="btn btn-primary btn-block mt-3">Enviar</button>
                                     </div>
-                                 </div>
-                              </div>
-                              <!-- button -->
-                              <button type="submit" id="submit_btn" value="Submit" class="btn btn-primary btn-block mt-3">Enviar</button>
-                           </div>
-                           <!-- /form-group-->
-                           <!-- Contact results -->
-                           <div id="contact_results"></div>
+                                    <!-- /form-group-->
+                                    <!-- Contact results -->
+                                    <div id="contact_results"></div>
+                                </div>
+                                <!-- /contact-form-->
+                            </div>
                         </div>
-                        <!-- /contact-form-->
-                  </div>
-               </div>
-             </div>
-           </div>
+                    </div>
+                </div>
+            </div>
+
          </div>
             <div class="slider-container">
 
@@ -392,7 +413,7 @@
                <div class="section-heading text-center">
                   <br>
                   <br>
-                  <h2>Actividades Educativas</h2>
+                  <h2>Agenda Virtual</h2>
                   <p class="subtitle">Observación del estudiante</p>
                </div>
                <!-- /section heading -->
